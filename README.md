@@ -35,9 +35,10 @@ The parser specified here is 'html.parser', but you can also use other parsers l
 # Navigating the HTML:
 Use BeautifulSoup's methods to navigate and search the HTML tree. For example, to find all the links in the HTML, you can use the find_all method:
 
+```Python
 links = soup.find_all('a')
 for link in links:
     print(link.get('href'))
-
+```
 This code snippet finds all the <a> (anchor) tags in the HTML and prints the values of their href attributes.
 This is a basic introduction to using BeautifulSoup for web scraping in Python. Keep in mind that web scraping should be done in compliance with the website's terms of service, and you should check the legality of web scraping for the specific site you are targeting.
