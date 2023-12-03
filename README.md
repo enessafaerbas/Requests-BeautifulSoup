@@ -20,9 +20,11 @@ You'll need to get the HTML content of the web page you want to scrape. You can 
 
 import requests
 
+'''
 url = "https://example.com"
 response = requests.get(url)
 html_content = response.text
+'''
 
 # Creating a BeautifulSoup Object:
 Create a BeautifulSoup object, specifying the HTML parser to be used:
